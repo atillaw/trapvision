@@ -1,0 +1,17 @@
+{
+  "name": "tripverse-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/server",
+    "apps/mobile"
+  ],
+  "scripts": {
+    "postinstall": "npm run -ws build || true",
+    "lint": "echo 'Run lint per workspace'",
+    "typecheck": "echo 'Run typecheck per workspace'",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {}
+}

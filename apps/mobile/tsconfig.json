@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "composite": true,
+    "types": [
+      "react"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/components": [
+        "src/components/index.ts"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/screens": [
+        "src/screens"
+      ],
+      "@/screens/*": [
+        "src/screens/*"
+      ],
+      "@/services": [
+        "src/services/index.ts"
+      ],
+      "@/services/*": [
+        "src/services/*"
+      ],
+      "@/theme": [
+        "src/theme/index.ts"
+      ],
+      "@/theme/*": [
+        "src/theme/*"
+      ],
+      "@/i18n": [
+        "src/i18n/index.ts"
+      ],
+      "@/i18n/*": [
+        "src/i18n/*"
+      ],
+      "@/navigation": [
+        "src/navigation/index.ts"
+      ],
+      "@/navigation/*": [
+        "src/navigation/*"
+      ]
+    }
+  },
+  "include": [
+    "App.tsx",
+    "App.web.tsx",
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base"
+}

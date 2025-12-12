@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./apps/mobile" },
+    { "path": "./apps/server" }
+  ]
+}
